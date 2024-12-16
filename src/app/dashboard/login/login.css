@@ -1,0 +1,193 @@
+body {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.body-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent, rgb(234 240 241)) rgb(249, 249, 249);
+}
+
+.body-background .gradiant-point {
+    position: absolute;
+}
+
+.body-background .gradiant-point.point1 {
+    left: 20vw;
+    top: 50vh;
+    width: 10vw;
+    aspect-ratio: 1 / 1;
+    background-image: conic-gradient(from 180deg at 50% 50%, #dff4ff, #d2e3f9);
+    filter: blur(40px);
+}
+
+.body-background .gradiant-point.point2 {
+    left: 65vw;
+    top: 28vh;
+    width: 15vw;
+    aspect-ratio: 1 / .6;
+    background-image: conic-gradient(from 180deg at 50% 50%, #e4e8fd, #d5d8f7);
+    filter: blur(40px);
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+form .logo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+form .logo span {
+    font-family: 'barlow';
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 700;
+    color: #484070;
+    letter-spacing: -.5px;
+    padding-bottom: 2px;
+    transform: translateY(-5px);
+}
+
+form .sub-field {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+form .sub-field .check-whatsapp-container {
+    position: relative;
+    border-radius: 7px;
+    width: 55px;
+    height: 38px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form .sub-field .check-whatsapp-container input[type=checkbox] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+form .sub-field .check-whatsapp-container input[type=checkbox]:checked + .background {
+    background-color: #6da185;
+    border:none;
+}
+
+form .sub-field .check-whatsapp-container input[type=checkbox]:checked + .background svg {
+    fill: #d7ebe0;
+}
+
+form .sub-field .check-whatsapp-container .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #fdfdfd;
+    border: 1px solid #d9d9d9;
+    border-radius: 7px;
+}
+
+form .sub-field .check-whatsapp-container svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    fill: #44b678;
+}
+
+form label {
+    position: relative;
+    font-family: 'cairo';
+    font-weight: 500;
+    font-size: .9em;
+    margin: 0;
+    color: #282a2c;
+    margin-left: 2px;
+}
+
+form input[type=text], form input[type=password] {
+    position: relative;
+    width: 290px;
+    max-width: 100%;
+    height: 38px;
+    border: 1px solid;
+    border-color: #d9d9d9;
+    border-radius: 6px;
+    background-color: #fbfbfb;
+    padding: 12px;
+    font-family: 'assistant';
+    color: #222224;
+    outline: none;
+    transition: border-color .3s;
+}
+
+form input[type=text].warn, form input[type=password].warn {
+    border-color: #d95c5c;
+}
+
+input[type=text]:focus, form input[type=password]:focus, input[type=text]:focus-visible,  form input[type=password]:focus-visible {
+    border: 1px solid #6661ad;
+}
+
+form label.long-label {
+    color: #616569;
+}
+
+form input[type=submit] {
+    position: relative;
+    width: 100%;
+    height: 38px;
+    background-color: #585967;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    font-family: 'barlow';
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1;
+}
