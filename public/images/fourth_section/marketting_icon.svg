@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 223 220">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #333;
+        opacity: .3;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #1a1a1a;
+        opacity: .5;
+      }
+
+      .cls-4 {
+        fill: #705836;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="37.35" y1="101.98" x2="169.37" y2="101.98" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe08d"/>
+      <stop offset=".25" stop-color="#fdd379"/>
+      <stop offset=".56" stop-color="#fbc45f"/>
+      <stop offset=".81" stop-color="#f9ba4d"/>
+      <stop offset="1" stop-color="#f9b746"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="8" dy="8"/>
+      <feGaussianBlur result="blur" stdDeviation="15"/>
+      <feFlood flood-color="#000" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <ellipse class="cls-1" cx="103.36" cy="101.98" rx="66.01" ry="64.11"/>
+      <g>
+        <path class="cls-2" d="m85.73,100.1v23.84c0,1.46-1.22,2.65-2.73,2.65h-10.91c-1.51,0-2.73-1.19-2.73-2.65v-23.84c0-1.46,1.22-2.65,2.73-2.65h10.91c1.51,0,2.73,1.19,2.73,2.65Z"/>
+        <path class="cls-4" d="m106.83,68.31h-10.91c-1.51,0-2.73,1.19-2.73,2.65v52.99c0,1.46,1.22,2.65,2.73,2.65h10.91c1.51,0,2.73-1.19,2.73-2.65v-52.99c0-1.46-1.22-2.65-2.73-2.65Z"/>
+        <path class="cls-3" d="m130.65,81.56h-10.91c-1.51,0-2.73,1.19-2.73,2.65v39.74c0,1.46,1.22,2.65,2.73,2.65h10.91c1.51,0,2.73-1.19,2.73-2.65v-39.74c0-1.46-1.22-2.65-2.73-2.65Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
